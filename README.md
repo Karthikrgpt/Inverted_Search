@@ -24,6 +24,39 @@ Here’s a breakdown to its key features :-
 6. Display :- to display the data present in the data base
 
 ------------------------------------------------------------------------------------------------------------
+Output :-
+  
+  The files name can be passed through command line or else we can add the files later on.
+	-> to pass files name through command line 
+		make && ./Project.out Database_A.txt Database_B.txt Database_C.txt
+	-> to just command make && ./Project.out
+
+Result (display function) :-
+
+	                        Inverted Search
+
+	The Words present in the data base are:
+	-----------------------------------------------------------------------------
+	Index   Word                File count          Filename[Word count]
+	-----------------------------------------------------------------------------
+	0       are                     2       Database_A.txt[2] Database_B.txt[1]
+	5       fine.                   1       Database_A.txt[1]
+	6       Good                    1       Database_B.txt[1]
+	7       Hi                      2       Database_A.txt[1] Database_B.txt[1]
+	7       How                     2       Database_A.txt[1] Database_B.txt[1]
+	7       Hello12                 1       Database_A.txt[1]
+	8       I                       1       Database_A.txt[1]
+	10      Karthik                 2       Database_A.txt[1] Database_B.txt[1]
+	10      karthik                 1       Database_B.txt[1]
+	12      morning,                1       Database_B.txt[1]
+	19      think                   1       Database_A.txt[1]
+	24      you                     2       Database_A.txt[2] Database_B.txt[1]
+	#       0123                    1       Database_A.txt[1]
+	#       ...                     1       Database_B.txt[1]
+	#       ?                       1       Database_B.txt[1]
+	-----------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------
 Files enclosed :-
 
 1. Add_data.c
